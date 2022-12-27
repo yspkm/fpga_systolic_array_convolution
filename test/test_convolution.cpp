@@ -40,14 +40,14 @@ int main(void)
             if (!is_rand_test)
                 A[i][j] = a[i][j];
             else
-                A[i][j] = ((uint8_t)rand()) % ((uint8_t)8);
+                A[i][j] = ((uint8_t)rand()) % ((uint8_t)4);
 
     for (int i = 0; i < 3; i++)
         for (int j = 0; j < 3; j++)
             if (!is_rand_test)
                 B[i][j] = b[i][j];
             else
-                B[i][j] = ((uint8_t)rand()) % ((uint8_t)8);
+                B[i][j] = ((uint8_t)rand()) % ((uint8_t)4);
 
     C[0].fill(0);
     C[1].fill(0);
@@ -60,17 +60,17 @@ int main(void)
     sprintf(buf, "// Matrix A\n");
     for (int i = 0; i < A.size(); i++)
         for (int j = 0; j < A[i].size(); j++)
-            sprintf(buf + strlen(buf), "parameter[0:7] INPUT_A%d%d = 8\'d%u;\n", i, j, (unsigned)A[i][j]);
+            sprintf(buf + strlen(buf), "parameter[0:7] INPUT_A%d%d = 8\'d%u;\n", i+1, j+1, (unsigned)A[i][j]);
 
     sprintf(buf + strlen(buf), "\n// Matrix B\n");
     for (int i = 0; i < B.size(); i++)
         for (int j = 0; j < B[i].size(); j++)
-            sprintf(buf + strlen(buf), "parameter[0:7] INPUT_B%d%d = 8\'d%u;\n", i, j, (unsigned)B[i][j]);
+            sprintf(buf + strlen(buf), "parameter[0:7] INPUT_B%d%d = 8\'d%u;\n", i+1, j+1, (unsigned)B[i][j]);
 
     sprintf(buf + strlen(buf), "\n// Matrix C\n");
     for (int i = 0; i < C.size(); i++)
         for (int j = 0; j < C[i].size(); j++)
-            sprintf(buf + strlen(buf), "parameter[0:7] ANS_C%d%d = 8\'d%u;\n", i, j, (unsigned)C[i][j]);
+            sprintf(buf + strlen(buf), "parameter[0:7] ANS_C%d%d = 8\'d%u;\n", i+1, j+1, (unsigned)C[i][j]);
 
     fprintf(f, "%s", buf);
     cout << buf;

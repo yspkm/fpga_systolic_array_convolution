@@ -24,14 +24,14 @@ module sa33(
     output reg[0:7]
            c11, c12,
            c21, c22;
-    reg [0:3] cnt;
+    reg [0:2] state;
     parameter S0=0, S1=1, S2=2, S3=3, S4=4, S5=5, S6=6, S7=7;
-    always(posedge clk)
-    begin
+    parameter[0:7] zero = 8'd0;
 
+
+    always @ (posedge rst) begin
+        {c11, c12, c21, c22, state} <= {zero, zero, zero, zero, 3'd0};
     end
-
-
 
 
 

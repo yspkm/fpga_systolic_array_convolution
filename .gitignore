@@ -32,3 +32,11 @@
 *.app
 
 *etc*
+
+# texts, value change dumps
+*.txt
+*.vcd
+
+# xsim 
+*xsim.dir*
+*xvlog.pb*

@@ -3,20 +3,23 @@ module pe(clk, rst, u, d, l, r, out);
     input wire[0:7] u, l;
     output reg[0:7] d, r;
     output reg [0:7] out;
-    reg[0:7] weight, data;
+    reg[0:7] weight, data, tmp;
 
     parameter[0:7] zero = 8'd0;
 
     always @(posedge rst) begin
-        {weight, data, out} <= {zero, zero, zero};
+        {weight, data, out, tmp} <= {zero, zero, zero, zero};
     end
 
-    always @(posedge clk) begin
-        {d, r} <= {weight,data};
+    always @(u, l) begin
+        weight <= u;
+        data <= l;
+        tmp <= tmp + u * l;
     end
 
-    always @(u or l) begin
-        {weight, data, out} = {u, l, out+u*l};
+    always @(posedge clk)
+    begin
+        {r, d, out} <=  {data, weight, tmp};
     end
 
 endmodule
