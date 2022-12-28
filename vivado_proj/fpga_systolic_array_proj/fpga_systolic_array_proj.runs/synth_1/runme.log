@@ -1,0 +1,635 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 82575
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/jkmxm/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-9398] empty port in module declaration [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:29]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2769.410 ; gain = 381.738 ; free physical = 271 ; free virtual = 7851
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2181.780; parent = 1975.141; children = 206.640
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3801.711; parent = 2769.414; children = 1032.297
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'tpu' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:2]
+WARNING: [Synth 8-567] referenced signal 'next_state' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:86]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:96]
+WARNING: [Synth 8-567] referenced signal 'a00' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:95]
+WARNING: [Synth 8-567] referenced signal 'b22' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:95]
+WARNING: [Synth 8-567] referenced signal 'a01' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:95]
+WARNING: [Synth 8-567] referenced signal 'b21' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:95]
+WARNING: [Synth 8-567] referenced signal 'a02' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:95]
+WARNING: [Synth 8-567] referenced signal 'b20' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:95]
+WARNING: [Synth 8-567] referenced signal 'a10' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:95]
+WARNING: [Synth 8-567] referenced signal 'b12' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:95]
+WARNING: [Synth 8-567] referenced signal 'a11' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:95]
+WARNING: [Synth 8-567] referenced signal 'b11' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:95]
+WARNING: [Synth 8-567] referenced signal 'a12' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:95]
+WARNING: [Synth 8-567] referenced signal 'b10' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:95]
+WARNING: [Synth 8-567] referenced signal 'a20' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:95]
+WARNING: [Synth 8-567] referenced signal 'b02' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:95]
+WARNING: [Synth 8-567] referenced signal 'a21' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:95]
+WARNING: [Synth 8-567] referenced signal 'b01' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:95]
+WARNING: [Synth 8-567] referenced signal 'a22' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:95]
+WARNING: [Synth 8-567] referenced signal 'b00' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:95]
+WARNING: [Synth 8-567] referenced signal 'a03' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:95]
+WARNING: [Synth 8-567] referenced signal 'a13' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:95]
+WARNING: [Synth 8-567] referenced signal 'a23' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:95]
+WARNING: [Synth 8-567] referenced signal 'a30' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:95]
+WARNING: [Synth 8-567] referenced signal 'a31' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:95]
+WARNING: [Synth 8-567] referenced signal 'a32' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:95]
+WARNING: [Synth 8-567] referenced signal 'a33' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:95]
+WARNING: [Synth 8-308] ignoring empty port [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'tpu' (0#1) [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:2]
+WARNING: [Synth 8-7023] instance 'controller' of module 'tpu' has 58 connections declared, but only 57 given [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/top.v:47]
+INFO: [Synth 8-6157] synthesizing module 'ram' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/ram.v:1]
+INFO: [Synth 8-6157] synthesizing module 'uint8' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/uint8.v:1]
+INFO: [Synth 8-6157] synthesizing module 'flipflop' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/flipflop.v:1]
+WARNING: [Synth 8-567] referenced signal 'in' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/flipflop.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'flipflop' (0#1) [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/flipflop.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'uint8' (0#1) [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/uint8.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ram' (0#1) [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/ram.v:1]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/top.v:71]
+INFO: [Synth 8-6157] synthesizing module 'lcd' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/lcd.v:1]
+WARNING: [Synth 8-567] referenced signal 'display_out' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/lcd.v:31]
+WARNING: [Synth 8-567] referenced signal 'done' should be on the sensitivity list [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/lcd.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'lcd' (0#1) [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/lcd.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pe' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/pe.v:1]
+INFO: [Synth 8-6157] synthesizing module 'multu8' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/multu8.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vedic_multu8' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/vedic_multu8.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vedic_multu4' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/vedic_multu4.v:1]
+INFO: [Synth 8-6157] synthesizing module 'addu6' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/addu6.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fadder' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/fadder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fadder' (0#1) [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/fadder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'addu6' (0#1) [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/addu6.v:1]
+INFO: [Synth 8-6157] synthesizing module 'addu4' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/addu4.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'addu4' (0#1) [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/addu4.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vedic_multu2' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/vedic_multu2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'hadder' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/hadder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'hadder' (0#1) [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/hadder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'vedic_multu2' (0#1) [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/vedic_multu2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'vedic_multu4' (0#1) [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/vedic_multu4.v:1]
+INFO: [Synth 8-6157] synthesizing module 'addu10' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/addu10.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'addu10' (0#1) [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/addu10.v:1]
+INFO: [Synth 8-6157] synthesizing module 'addu8' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/addu8.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'addu8' (0#1) [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/addu8.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'vedic_multu8' (0#1) [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/vedic_multu8.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'multu8' (0#1) [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/multu8.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pe' (0#1) [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/pe.v:1]
+WARNING: [Synth 8-7071] port 'wout' of module 'pe' is unconnected for instance 'computation_single_pe' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/top.v:84]
+WARNING: [Synth 8-7023] instance 'computation_single_pe' of module 'pe' has 8 connections declared, but only 7 given [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/top.v:84]
+INFO: [Synth 8-6157] synthesizing module 'sa2x2' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/sa2x2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'sa2x2' (0#1) [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/sa2x2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'sa3x3' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/sa3x3.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'sa3x3' (0#1) [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/sa3x3.v:1]
+INFO: [Synth 8-6157] synthesizing module 'compio' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/compio.v:1]
+WARNING: [Synth 8-7071] port 'clear' of module 'uint8' is unconnected for instance 'addr_pe00' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/compio.v:63]
+WARNING: [Synth 8-7023] instance 'addr_pe00' of module 'uint8' has 5 connections declared, but only 4 given [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/compio.v:63]
+WARNING: [Synth 8-7071] port 'clear' of module 'uint8' is unconnected for instance 'addr_pe01' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/compio.v:64]
+WARNING: [Synth 8-7023] instance 'addr_pe01' of module 'uint8' has 5 connections declared, but only 4 given [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/compio.v:64]
+WARNING: [Synth 8-7071] port 'clear' of module 'uint8' is unconnected for instance 'addr_pe10' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/compio.v:65]
+WARNING: [Synth 8-7023] instance 'addr_pe10' of module 'uint8' has 5 connections declared, but only 4 given [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/compio.v:65]
+WARNING: [Synth 8-7071] port 'clear' of module 'uint8' is unconnected for instance 'addr_pe11' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/compio.v:66]
+WARNING: [Synth 8-7023] instance 'addr_pe11' of module 'uint8' has 5 connections declared, but only 4 given [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/compio.v:66]
+WARNING: [Synth 8-7071] port 'clear' of module 'uint8' is unconnected for instance 'addr_sa2x2_00' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/compio.v:68]
+WARNING: [Synth 8-7023] instance 'addr_sa2x2_00' of module 'uint8' has 5 connections declared, but only 4 given [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/compio.v:68]
+WARNING: [Synth 8-7071] port 'clear' of module 'uint8' is unconnected for instance 'addr_sa2x2_01' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/compio.v:69]
+WARNING: [Synth 8-7023] instance 'addr_sa2x2_01' of module 'uint8' has 5 connections declared, but only 4 given [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/compio.v:69]
+WARNING: [Synth 8-7071] port 'clear' of module 'uint8' is unconnected for instance 'addr_sa2x2_10' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/compio.v:70]
+WARNING: [Synth 8-7023] instance 'addr_sa2x2_10' of module 'uint8' has 5 connections declared, but only 4 given [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/compio.v:70]
+WARNING: [Synth 8-7071] port 'clear' of module 'uint8' is unconnected for instance 'addr_sa2x2_11' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/compio.v:71]
+WARNING: [Synth 8-7023] instance 'addr_sa2x2_11' of module 'uint8' has 5 connections declared, but only 4 given [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/compio.v:71]
+WARNING: [Synth 8-7071] port 'clear' of module 'uint8' is unconnected for instance 'addr_sa3x3_00' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/compio.v:73]
+WARNING: [Synth 8-7023] instance 'addr_sa3x3_00' of module 'uint8' has 5 connections declared, but only 4 given [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/compio.v:73]
+WARNING: [Synth 8-7071] port 'clear' of module 'uint8' is unconnected for instance 'addr_sa3x3_01' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/compio.v:74]
+WARNING: [Synth 8-7023] instance 'addr_sa3x3_01' of module 'uint8' has 5 connections declared, but only 4 given [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/compio.v:74]
+WARNING: [Synth 8-7071] port 'clear' of module 'uint8' is unconnected for instance 'addr_sa3x3_10' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/compio.v:75]
+WARNING: [Synth 8-7023] instance 'addr_sa3x3_10' of module 'uint8' has 5 connections declared, but only 4 given [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/compio.v:75]
+WARNING: [Synth 8-7071] port 'clear' of module 'uint8' is unconnected for instance 'addr_sa3x3_11' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/compio.v:76]
+WARNING: [Synth 8-7023] instance 'addr_sa3x3_11' of module 'uint8' has 5 connections declared, but only 4 given [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/compio.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'compio' (0#1) [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/compio.v:1]
+WARNING: [Synth 8-7071] port 'cnt_clk_pe_start0' of module 'compio' is unconnected for instance 'computation_buffer' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/top.v:98]
+WARNING: [Synth 8-7071] port 'cnt_clk_pe_end0' of module 'compio' is unconnected for instance 'computation_buffer' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/top.v:98]
+WARNING: [Synth 8-7023] instance 'computation_buffer' of module 'compio' has 37 connections declared, but only 35 given [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/top.v:98]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/top.v:1]
+WARNING: [Synth 8-7129] Port clk in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port done in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_00[7] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_00[6] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_00[5] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_00[4] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_00[3] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_00[2] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_00[1] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_00[0] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_01[7] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_01[6] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_01[5] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_01[4] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_01[3] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_01[2] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_01[1] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_01[0] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_10[7] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_10[6] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_10[5] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_10[4] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_10[3] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_10[2] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_10[1] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_10[0] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_11[7] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_11[6] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_11[5] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_11[4] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_11[3] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_11[2] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_11[1] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pe_out_11[0] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_00[7] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_00[6] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_00[5] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_00[4] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_00[3] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_00[2] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_00[1] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_00[0] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_01[7] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_01[6] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_01[5] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_01[4] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_01[3] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_01[2] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_01[1] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_01[0] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_10[7] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_10[6] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_10[5] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_10[4] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_10[3] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_10[2] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_10[1] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_10[0] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_11[7] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_11[6] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_11[5] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_11[4] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_11[3] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_11[2] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_11[1] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa2x2_out_11[0] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_00[7] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_00[6] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_00[5] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_00[4] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_00[3] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_00[2] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_00[1] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_00[0] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_01[7] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_01[6] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_01[5] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_01[4] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_01[3] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_01[2] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_01[1] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_01[0] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_10[7] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_10[6] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_10[5] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_10[4] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_10[3] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_10[2] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_10[1] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_10[0] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_11[7] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_11[6] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_11[5] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_11[4] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_11[3] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_11[2] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_11[1] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa3x3_out_11[0] in module lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cnt_clk_pe_start[31] in module lcd is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2852.379 ; gain = 464.707 ; free physical = 349 ; free virtual = 7893
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2181.780; parent = 1975.141; children = 206.640
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3884.680; parent = 2852.383; children = 1032.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2870.191 ; gain = 482.520 ; free physical = 346 ; free virtual = 7891
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2181.780; parent = 1975.141; children = 206.640
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3902.492; parent = 2870.195; children = 1032.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2870.191 ; gain = 482.520 ; free physical = 351 ; free virtual = 7896
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2181.780; parent = 1975.141; children = 206.640
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3902.492; parent = 2870.195; children = 1032.297
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2870.191 ; gain = 0.000 ; free physical = 331 ; free virtual = 7876
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/constrs_1/imports/Xilinx/board_master.xdc]
+Finished Parsing XDC File [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/constrs_1/imports/Xilinx/board_master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3028.941 ; gain = 0.000 ; free physical = 209 ; free virtual = 7778
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3028.941 ; gain = 0.000 ; free physical = 209 ; free virtual = 7779
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/jkmxm/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3028.941 ; gain = 641.270 ; free physical = 294 ; free virtual = 7859
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2181.780; parent = 1975.141; children = 206.640
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4029.227; parent = 2996.930; children = 1032.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3028.941 ; gain = 641.270 ; free physical = 294 ; free virtual = 7859
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2181.780; parent = 1975.141; children = 206.640
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4029.227; parent = 2996.930; children = 1032.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3028.941 ; gain = 641.270 ; free physical = 293 ; free virtual = 7859
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2181.780; parent = 1975.141; children = 206.640
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4029.227; parent = 2996.930; children = 1032.297
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'done_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:130]
+WARNING: [Synth 8-327] inferring latch for variable 'pe_c00_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:100]
+WARNING: [Synth 8-327] inferring latch for variable 'pe_c01_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'pe_c10_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:102]
+WARNING: [Synth 8-327] inferring latch for variable 'pe_c11_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:103]
+WARNING: [Synth 8-327] inferring latch for variable 'sa2x2_c00_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:105]
+WARNING: [Synth 8-327] inferring latch for variable 'sa2x2_c01_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:106]
+WARNING: [Synth 8-327] inferring latch for variable 'sa2x2_c10_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:107]
+WARNING: [Synth 8-327] inferring latch for variable 'sa2x2_c11_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:108]
+WARNING: [Synth 8-327] inferring latch for variable 'sa3x3_c00_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:110]
+WARNING: [Synth 8-327] inferring latch for variable 'sa3x3_c01_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:111]
+WARNING: [Synth 8-327] inferring latch for variable 'sa3x3_c10_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:112]
+WARNING: [Synth 8-327] inferring latch for variable 'sa3x3_c11_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:113]
+WARNING: [Synth 8-327] inferring latch for variable 'pe_din_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:115]
+WARNING: [Synth 8-327] inferring latch for variable 'pe_win_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:116]
+WARNING: [Synth 8-327] inferring latch for variable 'sa2x2_din0_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:118]
+WARNING: [Synth 8-327] inferring latch for variable 'sa2x2_din1_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'sa2x2_win0_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:120]
+WARNING: [Synth 8-327] inferring latch for variable 'sa2x2_win1_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:121]
+WARNING: [Synth 8-327] inferring latch for variable 'sa3x3_din0_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:123]
+WARNING: [Synth 8-327] inferring latch for variable 'sa3x3_din1_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:124]
+WARNING: [Synth 8-327] inferring latch for variable 'sa3x3_din2_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:125]
+WARNING: [Synth 8-327] inferring latch for variable 'sa3x3_win0_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:126]
+WARNING: [Synth 8-327] inferring latch for variable 'sa3x3_win1_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:127]
+WARNING: [Synth 8-327] inferring latch for variable 'sa3x3_win2_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'state_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:88]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'pe_clear_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:187]
+WARNING: [Synth 8-327] inferring latch for variable 'sa2x2_clear_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:786]
+WARNING: [Synth 8-327] inferring latch for variable 'sa3x3_clear_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v:452]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg' [/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.srcs/sources_1/imports/src/flipflop.v:7]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3028.941 ; gain = 641.270 ; free physical = 283 ; free virtual = 7850
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2181.780; parent = 1975.141; children = 206.640
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4029.227; parent = 2996.930; children = 1032.297
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'memory/addr_a00' (uint8) to 'memory/addr_a13'
+INFO: [Synth 8-223] decloning instance 'memory/addr_a00' (uint8) to 'memory/addr_b10'
+INFO: [Synth 8-223] decloning instance 'memory/addr_a01' (uint8) to 'memory/addr_b11'
+INFO: [Synth 8-223] decloning instance 'memory/addr_a02' (uint8) to 'memory/addr_a30'
+INFO: [Synth 8-223] decloning instance 'memory/addr_a02' (uint8) to 'memory/addr_b12'
+INFO: [Synth 8-223] decloning instance 'memory/addr_a03' (uint8) to 'memory/addr_a10'
+INFO: [Synth 8-223] decloning instance 'memory/addr_a03' (uint8) to 'memory/addr_b20'
+INFO: [Synth 8-223] decloning instance 'memory/addr_a03' (uint8) to 'memory/addr_b22'
+INFO: [Synth 8-223] decloning instance 'memory/addr_a11' (uint8) to 'memory/addr_a32'
+INFO: [Synth 8-223] decloning instance 'memory/addr_a11' (uint8) to 'memory/addr_b00'
+INFO: [Synth 8-223] decloning instance 'memory/addr_a11' (uint8) to 'memory/addr_b02'
+INFO: [Synth 8-223] decloning instance 'memory/addr_a12' (uint8) to 'memory/addr_a23'
+INFO: [Synth 8-223] decloning instance 'memory/addr_a12' (uint8) to 'memory/addr_b01'
+INFO: [Synth 8-223] decloning instance 'memory/addr_a20' (uint8) to 'memory/addr_a31'
+INFO: [Synth 8-223] decloning instance 'memory/addr_a20' (uint8) to 'memory/addr_a33'
+INFO: [Synth 8-223] decloning instance 'memory/addr_a20' (uint8) to 'memory/addr_b21'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 1424  
+	   2 Input      1 Bit         XORs := 448   
++---Registers : 
+	               32 Bit    Registers := 5     
+	                8 Bit    Registers := 11    
++---Muxes : 
+	  11 Input    8 Bit        Muxes := 1     
+	 115 Input    8 Bit        Muxes := 6     
+	   5 Input    8 Bit        Muxes := 3     
+	 115 Input    4 Bit        Muxes := 1     
+	 115 Input    3 Bit        Muxes := 3     
+	 115 Input    1 Bit        Muxes := 20    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (controller/done_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/pe_c00_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/pe_c01_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/pe_c10_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/pe_c11_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_c00_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_c01_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_c10_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_c11_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_c00_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_c01_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_c10_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_c11_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/pe_din_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/pe_din_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/pe_din_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/pe_din_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/pe_din_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/pe_din_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/pe_din_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/pe_din_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/pe_win_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/pe_win_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/pe_win_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/pe_win_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/pe_win_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/pe_win_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/pe_win_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/pe_win_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_din0_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_din0_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_din0_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_din0_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_din0_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_din0_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_din0_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_din0_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_din1_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_din1_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_din1_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_din1_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_din1_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_din1_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_din1_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_din1_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_win0_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_win0_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_win0_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_win0_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_win0_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_win0_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_win0_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_win0_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_win1_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_win1_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_win1_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_win1_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_win1_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_win1_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_win1_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa2x2_win1_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_din0_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_din0_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_din0_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_din0_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_din0_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_din0_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_din0_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_din0_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_din1_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_din1_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_din1_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_din1_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_din1_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_din1_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_din1_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_din1_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_din2_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_din2_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_din2_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_din2_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_din2_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_din2_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_din2_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_din2_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_win0_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_win0_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_win0_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_win0_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_win0_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_win0_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_win0_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_win0_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_win1_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_win1_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_win1_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_win1_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_win1_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_win1_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (controller/sa3x3_win1_reg[1]) is unused and will be removed from module top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3028.941 ; gain = 641.270 ; free physical = 257 ; free virtual = 7833
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2181.780; parent = 1975.141; children = 206.640
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4029.227; parent = 2996.930; children = 1032.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+-----------------------+---------------+----------------+
+|Module Name | RTL Object            | Depth x Width | Implemented As | 
++------------+-----------------------+---------------+----------------+
+|tpu         | pe_din                | 128x1         | LUT            | 
+|tpu         | sa2x2_din0            | 128x1         | LUT            | 
+|tpu         | sa3x3_din0            | 128x1         | LUT            | 
+|tpu         | next_state            | 128x7         | LUT            | 
+|top         | controller/pe_din     | 128x1         | LUT            | 
+|top         | controller/sa2x2_din0 | 128x1         | LUT            | 
+|top         | controller/sa3x3_din0 | 128x1         | LUT            | 
+|top         | controller/next_state | 128x7         | LUT            | 
++------------+-----------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3028.941 ; gain = 641.270 ; free physical = 196 ; free virtual = 7739
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2280.984; parent = 2075.090; children = 206.640
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4029.227; parent = 2996.930; children = 1032.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3028.941 ; gain = 641.270 ; free physical = 197 ; free virtual = 7740
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2281.094; parent = 2075.199; children = 206.640
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4029.227; parent = 2996.930; children = 1032.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3028.941 ; gain = 641.270 ; free physical = 206 ; free virtual = 7739
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2281.532; parent = 2075.639; children = 206.640
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4029.227; parent = 2996.930; children = 1032.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3028.941 ; gain = 641.270 ; free physical = 190 ; free virtual = 7723
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2281.676; parent = 2075.783; children = 206.640
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4029.227; parent = 2996.930; children = 1032.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3028.941 ; gain = 641.270 ; free physical = 190 ; free virtual = 7723
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2281.691; parent = 2075.799; children = 206.640
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4029.227; parent = 2996.930; children = 1032.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3028.941 ; gain = 641.270 ; free physical = 200 ; free virtual = 7723
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2281.707; parent = 2075.814; children = 206.640
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4029.227; parent = 2996.930; children = 1032.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3028.941 ; gain = 641.270 ; free physical = 200 ; free virtual = 7722
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2281.723; parent = 2075.830; children = 206.640
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4029.227; parent = 2996.930; children = 1032.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3028.941 ; gain = 641.270 ; free physical = 199 ; free virtual = 7722
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2281.723; parent = 2075.830; children = 206.640
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4029.227; parent = 2996.930; children = 1032.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3028.941 ; gain = 641.270 ; free physical = 199 ; free virtual = 7721
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2281.738; parent = 2075.846; children = 206.640
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4029.227; parent = 2996.930; children = 1032.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT2 |     2|
+|3     |LUT3 |     1|
+|4     |LUT4 |     1|
+|5     |LUT5 |     6|
+|6     |LUT6 |     3|
+|7     |LD   |     7|
+|8     |LDC  |     7|
+|9     |IBUF |     2|
+|10    |OBUF |    14|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3028.941 ; gain = 641.270 ; free physical = 198 ; free virtual = 7721
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2281.770; parent = 2075.877; children = 206.640
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4029.227; parent = 2996.930; children = 1032.297
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 456 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3028.941 ; gain = 482.520 ; free physical = 243 ; free virtual = 7766
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3028.941 ; gain = 641.270 ; free physical = 243 ; free virtual = 7766
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3028.941 ; gain = 0.000 ; free physical = 345 ; free virtual = 7874
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3028.941 ; gain = 0.000 ; free physical = 286 ; free virtual = 7815
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  LD => LDCE: 7 instances
+  LDC => LDCE: 7 instances
+
+Synth Design complete, checksum: cb21eef7
+INFO: [Common 17-83] Releasing license: Synthesis
+75 Infos, 294 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 3028.941 ; gain = 990.152 ; free physical = 495 ; free virtual = 8025
+INFO: [Common 17-1381] The checkpoint '/home/jkmxm/Desktop/fpga_systolic_array_convolution/vivado_proj/fpga_systolic_array_proj/fpga_systolic_array_proj.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 28 21:21:03 2022...

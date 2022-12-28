@@ -14,7 +14,7 @@ int main(void)
     const char *fname = "test_data.txt";
     char buf[4096];
     memset(buf, 0x0, (sizeof(buf) / sizeof(buf[0])) * sizeof(uint8_t));
-    bool is_rand_test = false;
+    bool is_rand_test = true;
     uint8_t a[4][4] = {
         {4, 6, 5, 1},
         {1, 2, 3, 4},
@@ -60,17 +60,17 @@ int main(void)
     sprintf(buf, "// Matrix A\n");
     for (int i = 0; i < A.size(); i++)
         for (int j = 0; j < A[i].size(); j++)
-            sprintf(buf + strlen(buf), "parameter[7:0] INPUT_A%d%d = 8\'d%u;\n", i + 1, j + 1, (unsigned)A[i][j]);
+            sprintf(buf + strlen(buf), "parameter[7:0] INPUT_A%d%d = 8\'d%u;\n", i , j , (unsigned)A[i][j]);
 
     sprintf(buf + strlen(buf), "\n// Matrix B\n");
     for (int i = 0; i < B.size(); i++)
         for (int j = 0; j < B[i].size(); j++)
-            sprintf(buf + strlen(buf), "parameter[7:0] INPUT_B%d%d = 8\'d%u;\n", i + 1, j + 1, (unsigned)B[i][j]);
+            sprintf(buf + strlen(buf), "parameter[7:0] INPUT_B%d%d = 8\'d%u;\n", i , j , (unsigned)B[i][j]);
 
     sprintf(buf + strlen(buf), "\n// Matrix C\n");
     for (int i = 0; i < C.size(); i++)
         for (int j = 0; j < C[i].size(); j++)
-            sprintf(buf + strlen(buf), "parameter[7:0] ANS_C%d%d = 8\'d%u;\n", i + 1, j + 1, (unsigned)C[i][j]);
+            sprintf(buf + strlen(buf), "parameter[7:0] ANS_C%d%d = 8\'d%u;\n", i , j , (unsigned)C[i][j]);
 
     sprintf(buf + strlen(buf), "// mem-a\n");
     for (int i = 0; i < A.size(); i++)

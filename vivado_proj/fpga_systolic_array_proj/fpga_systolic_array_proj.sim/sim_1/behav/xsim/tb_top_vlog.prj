@@ -1,0 +1,29 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../fpga_systolic_array_proj.srcs/sources_1/imports/src/addu10.v" \
+"../../../../fpga_systolic_array_proj.srcs/sources_1/imports/src/addu4.v" \
+"../../../../fpga_systolic_array_proj.srcs/sources_1/imports/src/addu6.v" \
+"../../../../fpga_systolic_array_proj.srcs/sources_1/imports/src/addu8.v" \
+"../../../../fpga_systolic_array_proj.srcs/sources_1/imports/src/compio.v" \
+"../../../../fpga_systolic_array_proj.srcs/sources_1/imports/src/fadder.v" \
+"../../../../fpga_systolic_array_proj.srcs/sources_1/imports/src/flipflop.v" \
+"../../../../fpga_systolic_array_proj.srcs/sources_1/imports/src/hadder.v" \
+"../../../../fpga_systolic_array_proj.srcs/sources_1/imports/src/lcd.v" \
+"../../../../fpga_systolic_array_proj.srcs/sources_1/imports/src/multu8.v" \
+"../../../../fpga_systolic_array_proj.srcs/sources_1/imports/src/pe.v" \
+"../../../../fpga_systolic_array_proj.srcs/sources_1/imports/src/ram.v" \
+"../../../../fpga_systolic_array_proj.srcs/sources_1/imports/src/sa2x2.v" \
+"../../../../fpga_systolic_array_proj.srcs/sources_1/imports/src/sa3x3.v" \
+"../../../../fpga_systolic_array_proj.srcs/sources_1/imports/src/top.v" \
+"../../../../fpga_systolic_array_proj.srcs/sources_1/imports/src/tpu.v" \
+"../../../../fpga_systolic_array_proj.srcs/sources_1/imports/src/uint8.v" \
+"../../../../fpga_systolic_array_proj.srcs/sources_1/imports/src/vedic_multu2.v" \
+"../../../../fpga_systolic_array_proj.srcs/sources_1/imports/src/vedic_multu4.v" \
+"../../../../fpga_systolic_array_proj.srcs/sources_1/imports/src/vedic_multu8.v" \
+"../../../../fpga_systolic_array_proj.srcs/sim_1/imports/src/tb_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
