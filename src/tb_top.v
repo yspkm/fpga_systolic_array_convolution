@@ -1,9 +1,9 @@
 `timescale  1ns/1ps
 module tb_top;
-    reg CLK, RST, START;
+    reg CLK, RST, EN;
     wire [6:0] STATE, NEXT_STATE;
 
-    top TOP(CLK, RST, STATE, NEXT_STATE);
+    top TOP(.clk(CLK), .rst(RST), .state(STATE), .next_state(NEXT_STATE));
 
     initial begin
         CLK = 1'b0;
@@ -24,7 +24,6 @@ module tb_top;
         $dumpvars(3, tb_top);
         #10 RST = 1'b1;
         #10 RST = 1'b0;
-        START = 1'b1;
         #2500 $finish();
 
     end

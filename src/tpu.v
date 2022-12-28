@@ -1,6 +1,6 @@
 
 module tpu(
-        clk, rst, en, done,
+        clk, rst, done,
 
         a00, a01, a02, a03,
         a10, a11, a12, a13,
@@ -28,7 +28,7 @@ module tpu(
         pe_clear, sa2x2_clear, sa3x3_clear,
     );
 
-    input wire clk, rst, en;
+    input wire clk, rst;
 
     input [7:0] a00, a01, a02, a03, a10, a11, a12, a13,
           a20, a21, a22, a23, a30, a31, a32, a33;
@@ -83,14 +83,11 @@ module tpu(
               STATE_DONE = 113;
 
     //update the current state => clk edge or rst
-    always @ (clk or rst or en) begin
-        if (en)
-        begin
-            if (rst)
-                state = STATE_RESET;
-            else if (clk)
-                state = next_state;
-        end
+    always @ (clk or rst) begin
+        if (rst)
+            state = STATE_RESET;
+        else if (clk)
+            state = next_state;
     end
 
 
