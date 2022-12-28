@@ -11,8 +11,11 @@ COMP = sa3x3.v sa2x2.v pe.v
 PERI =  top.v tpu.v ram.v
 MODULE =  ${PERI} ${COMP} ${MULT} ${ADD} ${REG} 
 
-TB = tb_top.v  
-OBJ = ${TB} ${MODULE}
+#TB = tb_top.v  
+#OBJ = ${TB} ${MODULE}
+TB = tb_multu8.v  
+OBJ = ${TB} ${MULT} ${ADD}
+
 
 ${VCD}: ${BIN} 
 	./${BIN}

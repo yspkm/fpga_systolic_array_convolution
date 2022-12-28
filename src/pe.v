@@ -1,25 +1,16 @@
-module pe(clk, rst, u, d, l, r, out);
-    input wire clk, rst;
-    input wire[0:7] u, l;
-    output reg[0:7] d, r;
-    output reg [0:7] out;
-    reg[0:7] weight, data, tmp;
+module pe(clk, rst, clear, din, win, dout, wout, out);
+    input clk, rst, clear;
+    input wire [7:0] din,win;
 
-    parameter[0:7] zero = 8'd0;
+    output wire [7:0] dout, wout, out;
 
-    always @(posedge rst) begin
-        {weight, data, out, tmp} <= {zero, zero, zero, zero};
-    end
+    wire[7:0]  mult_out, add_out;
 
-    always @(u, l) begin
-        weight <= u;
-        data <= l;
-        tmp <= tmp + u * l;
-    end
+    multu8 mult_flow(.a(din), .b(win), .out(mult_out));
+    addu8 add_flow(.a(out), .b(mult_out), .out(add_out));
 
-    always @(posedge clk)
-    begin
-        {r, d, out} <=  {data, weight, tmp};
-    end
+    uint8 weight_flow(.clk(clk), .rst(rst), .clear(clear), .in(win), .out(wout));
+    uint8 data_flow(.clk(clk), .rst(rst), .clear(clear), .in(din), .out(dout));
+    uint8 accumulator(.clk(clk), .rst(rst), .clear(clear), .in(add_out), .out(out));
 
 endmodule
