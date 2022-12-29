@@ -66,10 +66,10 @@ set rt::rc [catch {
     rt::set_parameter elaborateOnly true
     rt::set_parameter elaborateRtl true
     rt::set_parameter eliminateRedundantBitOperator false
-    rt::set_parameter dataflowBusHighlighting false
-    rt::set_parameter generateDataflowBusNetlist false
-    rt::set_parameter dataFlowViewInElab false
-    rt::set_parameter busViewFixBrokenConnections false
+    rt::set_parameter dataflowBusHighlighting true
+    rt::set_parameter generateDataflowBusNetlist true
+    rt::set_parameter dataFlowViewInElab true
+    rt::set_parameter busViewFixBrokenConnections true
     rt::set_parameter elaborateRtlOnlyFlow true
     rt::set_parameter writeBlackboxInterface true
     rt::set_parameter merge_flipflops true
