@@ -115,12 +115,12 @@ module compio (
 
     always @ (posedge pe_c10) begin
         PE_IN_10 <= pe_out;
-        cnt_clk_pe_start <= cnt_clk_sys + 32'd1;
     end
 
     always @ (posedge pe_c11) begin
         PE_IN_11 <= pe_out;
         cnt_clk_pe_end <= cnt_clk_sys;
+        cnt_clk_sa3x3_start <= cnt_clk_sys + 32'd1; 
     end
 
     always @ (posedge sa2x2_c00) begin
@@ -133,7 +133,6 @@ module compio (
 
     always @ (posedge sa2x2_c10) begin
         SA2X2_IN_10 <= sa2x2_out;
-        cnt_clk_sa2x2_start <= cnt_clk_sys + 32'd1; 
     end
 
     always @ (posedge sa2x2_c11) begin
@@ -155,12 +154,12 @@ module compio (
 
     always @ (posedge sa3x3_c10) begin
         SA3X3_IN_10 <= sa3x3_out;
-        cnt_clk_sa3x3_start <= cnt_clk_sys + 32'd1; 
     end
 
     always @ (posedge sa3x3_c11) begin
         SA3X3_IN_11 <= sa3x3_out;
-        cnt_clk_sa3x3_end <= cnt_clk_sys;
+        cnt_clk_sa3x3_end <= cnt_clk_sys; 
+        cnt_clk_sa2x2_start <= cnt_clk_sys + 32'd1; 
     end
 
 endmodule
